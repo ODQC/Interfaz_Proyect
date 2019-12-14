@@ -17,22 +17,6 @@ namespace Interfaz
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void contraseñaTxtTextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void usuarioTxtTextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
         public void BorrarUsuario(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Escape)

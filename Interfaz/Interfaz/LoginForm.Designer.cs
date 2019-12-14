@@ -86,7 +86,6 @@
             this.aceptarBtn.Text = "Aceptar";
             this.aceptarBtn.UseVisualStyleBackColor = true;
             this.aceptarBtn.Click += new System.EventHandler(this.aceptarBtn_Click);
-            this.aceptarBtn.MouseEnter += new System.EventHandler(this.Form1_Load);
             // 
             // cancelarBtn
             // 
@@ -135,7 +134,6 @@
             this.Name = "LoginForm";
             this.ShowIcon = false;
             this.Text = "Bienvenido al sistema";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.BorrarUsuario);
             ((System.ComponentModel.ISupportInitialize)(this.LoginErrorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LoginErrorProvider2)).EndInit();
