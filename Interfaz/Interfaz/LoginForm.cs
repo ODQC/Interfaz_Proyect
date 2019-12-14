@@ -17,22 +17,6 @@ namespace Interfaz
             InitializeComponent();
         }
 
-        public void BorrarUsuario(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Escape)
-            {
-                usuarioTxt.Text = "";
-            }
-        }
-
-        public void BorrarContraseña(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Escape)
-            {
-                contraseñaTxt.Text = "";
-            }
-        }
-
         public bool ValidarUsuario()
         {
             bool status = true;
@@ -57,16 +41,40 @@ namespace Interfaz
             return status;
         }
 
-        public void aceptarBtn_Click(object sender, EventArgs e)
+        public void AceptarBtn_Click(object sender, EventArgs e)
         {
             ValidarUsuario();
             ValidarContrasena();
         }
 
-        private void cancelarBtn_Click(object sender, EventArgs e)
+        private void CancelarBtn_Click(object sender, EventArgs e)
         {
             usuarioTxt.Text = "";
             contraseñaTxt.Text = "";
+   
         }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == (Keys.Escape))
+            {
+                Close();
+            return true;
+            }
+            return base.ProcessCmdKey(ref msg, keyData);
+        }
+
+     
+
+
+
+
+
+
     }
  }

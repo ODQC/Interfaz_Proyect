@@ -1,10 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Interfaz.Usuario">
-    <Position X="6.5" Y="0.5" Width="1.5" />
+  <Class Name="Interfaz.Cuenta">
+    <Position X="6.75" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAgAAIACAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAIAACAAgAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>UNA\Diagrama\Usuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Interfaz.Usuario">
+    <Position X="4.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AiAAAAAAAAAAAAIAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Usuario.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

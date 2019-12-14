@@ -5,48 +5,47 @@ using System.Text;
 
 namespace Interfaz
 {
-    public class Usuario
+    public class Cuenta
     {
-        public Usuario()
+        public Cuenta()
         {
-            throw new System.NotImplementedException();
+        
         }
 
-        ~Usuario()
+        ~Cuenta()
         {
-            throw new System.NotImplementedException();
+        
         }
 
-        private string nombre
+        private string Nombre
         {
-            get => default(int);
-            set
-            {
-            }
+            get;
+            set;
         }
 
-        private string cedula
+        private string Cedula
         {
-            get => default(int);
-            set
-            {
-            }
+            get;
+            set;
         }
 
-        private string correo
+        private string Correo
         {
-            get => default(int);
-            set
-            {
-            }
+            get;
+            set;
         }
 
-        private string direccion
+        private string Direccion
         {
-            get => default(int);
-            set
-            {
-            }
+            get;
+            set;
+        }
+
+        public int Contraseña
+        {
+            get;
+            set;
+            
         }
     }
 }

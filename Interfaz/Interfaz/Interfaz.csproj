@@ -55,6 +55,7 @@
     <Compile Include="UNA\Diagrama\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UNA\Diagrama\Usuario.cs" />
+    <Compile Include="Usuario.cs" />
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>

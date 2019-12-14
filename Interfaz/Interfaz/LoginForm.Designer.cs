@@ -66,7 +66,6 @@
             this.usuarioTxt.Name = "usuarioTxt";
             this.usuarioTxt.Size = new System.Drawing.Size(249, 20);
             this.usuarioTxt.TabIndex = 2;
-            this.usuarioTxt.KeyDown += new System.Windows.Forms.KeyEventHandler(this.BorrarUsuario);
             // 
             // contraseñaTxt
             // 
@@ -75,7 +74,6 @@
             this.contraseñaTxt.PasswordChar = '*';
             this.contraseñaTxt.Size = new System.Drawing.Size(249, 20);
             this.contraseñaTxt.TabIndex = 3;
-            this.contraseñaTxt.KeyDown += new System.Windows.Forms.KeyEventHandler(this.BorrarContraseña);
             // 
             // aceptarBtn
             // 
@@ -85,7 +83,7 @@
             this.aceptarBtn.TabIndex = 4;
             this.aceptarBtn.Text = "Aceptar";
             this.aceptarBtn.UseVisualStyleBackColor = true;
-            this.aceptarBtn.Click += new System.EventHandler(this.aceptarBtn_Click);
+
             // 
             // cancelarBtn
             // 
@@ -96,7 +94,6 @@
             this.cancelarBtn.TabIndex = 5;
             this.cancelarBtn.Text = "Cancelar";
             this.cancelarBtn.UseVisualStyleBackColor = true;
-            this.cancelarBtn.Click += new System.EventHandler(this.cancelarBtn_Click);
             // 
             // LoginErrorProvider1
             // 
@@ -120,6 +117,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.cancelarBtn;
             this.ClientSize = new System.Drawing.Size(384, 166);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.cancelarBtn);
@@ -134,7 +132,7 @@
             this.Name = "LoginForm";
             this.ShowIcon = false;
             this.Text = "Bienvenido al sistema";
-            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.BorrarUsuario);
+            this.Load += new System.EventHandler(this.LoginForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.LoginErrorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LoginErrorProvider2)).EndInit();
             this.ResumeLayout(false);
