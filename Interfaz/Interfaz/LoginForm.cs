@@ -33,7 +33,7 @@ namespace Interfaz
         }
 
 
-        private void BorrarUsuario(object sender, KeyEventArgs e)
+        public void BorrarUsuario(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Escape)
             {
@@ -41,7 +41,7 @@ namespace Interfaz
             }
         }
 
-        private void BorrarContraseña(object sender, KeyEventArgs e)
+        public void BorrarContraseña(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Escape)
             {
@@ -49,31 +49,31 @@ namespace Interfaz
             }
         }
 
-        private bool ValidarUsuario()
+        public bool ValidarUsuario()
         {
             bool status = true;
 
             if (usuarioTxt.Text == "")
             {
                 status = false;
-                errorProvider1.SetError(usuarioTxt, "Ingrese su usuario");
+                LoginErrorProvider1.SetError(usuarioTxt, "Ingrese su usuario");
             }
             return status;
         }
 
-        private bool ValidarContrasena()
+        public bool ValidarContrasena()
         {
             bool status = true;
 
             if (contraseñaTxt.Text == "")
             {
                 status = false;
-                errorProvider1.SetError(contraseñaTxt, "Ingrese su contraseña");
+                LoginErrorProvider1.SetError(contraseñaTxt, "Ingrese su contraseña");
             }
             return status;
         }
 
-        private void aceptarBtn_Click(object sender, EventArgs e)
+        public void aceptarBtn_Click(object sender, EventArgs e)
         {
             ValidarUsuario();
             ValidarContrasena();
