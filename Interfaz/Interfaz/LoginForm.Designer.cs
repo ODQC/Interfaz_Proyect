@@ -28,13 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.usuarioTxt = new System.Windows.Forms.TextBox();
             this.contraseñaTxt = new System.Windows.Forms.TextBox();
             this.aceptarBtn = new System.Windows.Forms.Button();
             this.cancelarBtn = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -61,6 +66,7 @@
             this.usuarioTxt.Name = "usuarioTxt";
             this.usuarioTxt.Size = new System.Drawing.Size(207, 20);
             this.usuarioTxt.TabIndex = 2;
+            this.usuarioTxt.KeyDown += new System.Windows.Forms.KeyEventHandler(this.BorrarUsuario);
             // 
             // contraseñaTxt
             // 
@@ -69,7 +75,7 @@
             this.contraseñaTxt.PasswordChar = '*';
             this.contraseñaTxt.Size = new System.Drawing.Size(207, 20);
             this.contraseñaTxt.TabIndex = 3;
-            this.contraseñaTxt.TextChanged += new System.EventHandler(this.contraseñaTxt_TextChanged);
+            this.contraseñaTxt.KeyDown += new System.Windows.Forms.KeyEventHandler(this.BorrarContraseña);
             // 
             // aceptarBtn
             // 
@@ -79,32 +85,44 @@
             this.aceptarBtn.TabIndex = 4;
             this.aceptarBtn.Text = "Aceptar";
             this.aceptarBtn.UseVisualStyleBackColor = true;
+            this.aceptarBtn.Click += new System.EventHandler(this.aceptarBtn_Click);
             this.aceptarBtn.MouseEnter += new System.EventHandler(this.Form1_Load);
             // 
             // cancelarBtn
             // 
+            this.cancelarBtn.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.cancelarBtn.Location = new System.Drawing.Point(24, 151);
             this.cancelarBtn.Name = "cancelarBtn";
             this.cancelarBtn.Size = new System.Drawing.Size(87, 37);
             this.cancelarBtn.TabIndex = 5;
             this.cancelarBtn.Text = "Cancelar";
             this.cancelarBtn.UseVisualStyleBackColor = true;
+            this.cancelarBtn.Click += new System.EventHandler(this.cancelarBtn_Click);
             // 
-            // label3
+            // errorProvider1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(185, 121);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Olvidó su contraseña?";
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // errorProvider2
+            // 
+            this.errorProvider2.ContainerControl = this;
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(179, 120);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(119, 13);
+            this.linkLabel1.TabIndex = 6;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "¿Olvidó su contraseña?";
             // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(324, 206);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.cancelarBtn);
             this.Controls.Add(this.aceptarBtn);
             this.Controls.Add(this.contraseñaTxt);
@@ -118,6 +136,9 @@
             this.ShowIcon = false;
             this.Text = "Bienvenido al sistema";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.BorrarUsuario);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,7 +152,9 @@
         private System.Windows.Forms.TextBox contraseñaTxt;
         private System.Windows.Forms.Button aceptarBtn;
         private System.Windows.Forms.Button cancelarBtn;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ErrorProvider errorProvider2;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
 
