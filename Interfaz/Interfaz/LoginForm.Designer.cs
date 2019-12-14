@@ -45,7 +45,6 @@
             this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Usuario:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -60,7 +59,7 @@
             // 
             this.usuarioTxt.Location = new System.Drawing.Point(91, 37);
             this.usuarioTxt.Name = "usuarioTxt";
-            this.usuarioTxt.Size = new System.Drawing.Size(183, 20);
+            this.usuarioTxt.Size = new System.Drawing.Size(207, 20);
             this.usuarioTxt.TabIndex = 2;
             // 
             // contraseñaTxt
@@ -68,24 +67,25 @@
             this.contraseñaTxt.Location = new System.Drawing.Point(91, 77);
             this.contraseñaTxt.Name = "contraseñaTxt";
             this.contraseñaTxt.PasswordChar = '*';
-            this.contraseñaTxt.Size = new System.Drawing.Size(183, 20);
+            this.contraseñaTxt.Size = new System.Drawing.Size(207, 20);
             this.contraseñaTxt.TabIndex = 3;
             this.contraseñaTxt.TextChanged += new System.EventHandler(this.contraseñaTxt_TextChanged);
             // 
             // aceptarBtn
             // 
-            this.aceptarBtn.Location = new System.Drawing.Point(186, 161);
+            this.aceptarBtn.Location = new System.Drawing.Point(211, 151);
             this.aceptarBtn.Name = "aceptarBtn";
-            this.aceptarBtn.Size = new System.Drawing.Size(88, 37);
+            this.aceptarBtn.Size = new System.Drawing.Size(87, 37);
             this.aceptarBtn.TabIndex = 4;
             this.aceptarBtn.Text = "Aceptar";
             this.aceptarBtn.UseVisualStyleBackColor = true;
+            this.aceptarBtn.MouseEnter += new System.EventHandler(this.Form1_Load);
             // 
             // cancelarBtn
             // 
-            this.cancelarBtn.Location = new System.Drawing.Point(24, 162);
+            this.cancelarBtn.Location = new System.Drawing.Point(24, 151);
             this.cancelarBtn.Name = "cancelarBtn";
-            this.cancelarBtn.Size = new System.Drawing.Size(89, 37);
+            this.cancelarBtn.Size = new System.Drawing.Size(87, 37);
             this.cancelarBtn.TabIndex = 5;
             this.cancelarBtn.Text = "Cancelar";
             this.cancelarBtn.UseVisualStyleBackColor = true;
@@ -93,7 +93,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(161, 127);
+            this.label3.Location = new System.Drawing.Point(185, 121);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(113, 13);
             this.label3.TabIndex = 6;
@@ -103,7 +103,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(334, 211);
+            this.ClientSize = new System.Drawing.Size(324, 206);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cancelarBtn);
             this.Controls.Add(this.aceptarBtn);
