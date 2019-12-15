@@ -26,5 +26,13 @@ namespace Interfaz
         {
 
         }
+
+        private void cancelarBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            DashBoardForm fmn = new DashBoardForm();
+            fmn.Show();
+
+        }
     }
 }

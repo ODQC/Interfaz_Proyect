@@ -8,3 +8,17 @@ C:\Users\402260762\Documents\GitHub\Interfaz_Proyect\Interfaz\Interfaz\obj\Debug
 C:\Users\402260762\Documents\GitHub\Interfaz_Proyect\Interfaz\Interfaz\obj\Debug\Interfaz.csproj.CoreCompileInputs.cache
 C:\Users\402260762\Documents\GitHub\Interfaz_Proyect\Interfaz\Interfaz\obj\Debug\Interfaz.exe
 C:\Users\402260762\Documents\GitHub\Interfaz_Proyect\Interfaz\Interfaz\obj\Debug\Interfaz.pdb
+\\VBOXSVR\W10Files\Progra 2 (verano PZ)\Interfaz_Proyect\Interfaz\Interfaz\bin\Debug\Interfaz.exe.config
+\\VBOXSVR\W10Files\Progra 2 (verano PZ)\Interfaz_Proyect\Interfaz\Interfaz\bin\Debug\Interfaz.exe
+\\VBOXSVR\W10Files\Progra 2 (verano PZ)\Interfaz_Proyect\Interfaz\Interfaz\bin\Debug\Interfaz.pdb
+\\VBOXSVR\W10Files\Progra 2 (verano PZ)\Interfaz_Proyect\Interfaz\Interfaz\obj\Debug\Interfaz.csprojAssemblyReference.cache
+\\VBOXSVR\W10Files\Progra 2 (verano PZ)\Interfaz_Proyect\Interfaz\Interfaz\obj\Debug\Interfaz.GUI.CedulaForm.resources
+\\VBOXSVR\W10Files\Progra 2 (verano PZ)\Interfaz_Proyect\Interfaz\Interfaz\obj\Debug\Interfaz.GUI.ConfigAlarm.resources
+\\VBOXSVR\W10Files\Progra 2 (verano PZ)\Interfaz_Proyect\Interfaz\Interfaz\obj\Debug\Interfaz.GUI.CuentasXCobrar.resources
+\\VBOXSVR\W10Files\Progra 2 (verano PZ)\Interfaz_Proyect\Interfaz\Interfaz\obj\Debug\Interfaz.DashBoardForm.resources
+\\VBOXSVR\W10Files\Progra 2 (verano PZ)\Interfaz_Proyect\Interfaz\Interfaz\obj\Debug\Interfaz.LoginForm.resources
+\\VBOXSVR\W10Files\Progra 2 (verano PZ)\Interfaz_Proyect\Interfaz\Interfaz\obj\Debug\Interfaz.Properties.Resources.resources
+\\VBOXSVR\W10Files\Progra 2 (verano PZ)\Interfaz_Proyect\Interfaz\Interfaz\obj\Debug\Interfaz.csproj.GenerateResource.cache
+\\VBOXSVR\W10Files\Progra 2 (verano PZ)\Interfaz_Proyect\Interfaz\Interfaz\obj\Debug\Interfaz.exe
+\\VBOXSVR\W10Files\Progra 2 (verano PZ)\Interfaz_Proyect\Interfaz\Interfaz\obj\Debug\Interfaz.pdb
+\\VBOXSVR\W10Files\Progra 2 (verano PZ)\Interfaz_Proyect\Interfaz\Interfaz\obj\Debug\Interfaz.GUI.InfoUser.resources

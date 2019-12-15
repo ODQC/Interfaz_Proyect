@@ -26,5 +26,13 @@ namespace Interfaz.GUI
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            DashBoardForm fmn = new DashBoardForm();
+            fmn.Show();
+
+        }
     }
 }

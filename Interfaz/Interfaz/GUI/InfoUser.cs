@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace Interfaz.GUI
 {
-    public partial class ConfigAlarm : Form
+    public partial class InfoUser : Form
     {
-        public ConfigAlarm()
+        public InfoUser()
         {
             InitializeComponent();
         }
 
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
         {
 
         }
@@ -27,7 +32,17 @@ namespace Interfaz.GUI
 
         }
 
-        private void domingoChk_CheckedChanged(object sender, EventArgs e)
+        private void infoEst_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label14_Click(object sender, EventArgs e)
         {
 
         }
